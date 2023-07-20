@@ -1,0 +1,429 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin-top: 4.5rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-block {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 5px #707070;
+  box-shadow: 0 0 10px 5px #707070;
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 30rem;
+  height: 100%;
+  list-style: none;
+  z-index: 1;
+}
+
+.nav-item > a {
+  padding: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-item:hover a {
+  color: #3cb9c1;
+}
+
+.about-me-button {
+  text-align: center;
+}
+
+.about-me-section {
+  position: relative;
+  min-height: calc(100vh - 4.5rem);
+  scroll-margin-top: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-me {
+  margin-top: 2rem;
+  width: 35%;
+  border-radius: 50px;
+}
+
+.about-me-text {
+  width: 50%;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.section-break {
+  height: 1rem;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.project-section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  min-height: calc(100vh - 4rem);
+  padding-top: 4rem;
+  text-align: center;
+  scroll-margin-top: 4.5rem;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.projects-text {
+  padding-bottom: 2rem;
+}
+
+.project {
+  height: 9rem;
+  width: 16rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  overflow: hidden;
+}
+
+.card:hover .description {
+  bottom: 10%;
+}
+.card:hover .card-title {
+  top: 10%;
+}
+
+.card-title {
+  position: absolute;
+  color: #3cb9c1;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
+.links > a {
+  background-color: #d9d9d9;
+  color: #000;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 0.5rem;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.links > a:hover {
+  background-color: #3cb9c1;
+}
+
+.description {
+  position: absolute;
+  bottom: -100%;
+  -webkit-transition: bottom 0.3s;
+  -o-transition: bottom 0.3s;
+  transition: bottom 0.3s;
+  z-index: 2;
+}
+.description > p {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.food-app {
+  background-position: center;
+  background-size: contain;
+  background-image: url(./assets/food-app.png);
+}
+.todo-list {
+  background-position: center;
+  background-size: contain;
+  background-image: url(./assets/todo-list.png);
+}
+
+.contact-section {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  z-index: -1;
+}
+
+.contact-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-container {
+  position: relative;
+  left: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 3rem;
+  min-width: 15rem;
+  background-color: #d9d9d9;
+  height: 60%;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  z-index: 1;
+  -webkit-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+}
+
+.contact-highlighted {
+  text-decoration: none;
+  color: #3cb9c1;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.3s;
+  -o-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+.contact-item > a:hover {
+  border-bottom: 1px solid #3cb9c1;
+}
+
+@media (min-width: 768px) {
+  .nav-wrapper {
+    width: 1200px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .about-me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 10%;
+  }
+  .img-me {
+    width: 25%;
+  }
+  .about-me-text {
+    width: 35%;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+  .project {
+    height: 15rem;
+    width: 26.55rem;
+  }
+  .links {
+    margin-top: 2rem;
+  }
+
+  .description > p {
+    font-size: 16px;
+    padding: 1rem;
+  }
+  .links > a {
+    font-size: 16px;
+    padding: 0.5rem;
+    width: 8rem;
+  }
+  .contact-container {
+    width: 25rem;
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}

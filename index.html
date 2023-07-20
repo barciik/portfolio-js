@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bartłomiej Batko - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/briefcase.svg">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-block">
+        <div class="nav-wrapper">
+          <ul class="nav-items">
+            <li class="nav-item about-me-button">
+              <a href="#about-me-section">About me</a>
+            </li>
+            <li class="nav-item"><a href="#project-section">Projects</a></li>
+            <li class="nav-item" id="contact-button"><a>Contact</a></li>
+            <li class="nav-item">
+              <a href="./assets/cv-eng.pdf" target="_blank">CV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <section class="about-me-section" id="about-me-section">
+        <h2 class="about-me-header">About me</h2>
+        <div class="about-me">
+          <img src="./assets/moja-morda.jpg" alt="moja morda" class="img-me" />
+          <div class="about-me-text">
+            <p>
+              Hello, my name is Bartłomiej Batko. I come from Poland, 22y/o. I'm
+              a student of Computer Science at University of Lower Silesia in
+              Wrocław, currently finishing my first year. Before university I've
+              been learning about front-end web development and I've made small
+              projects - some of which you can find in the section below.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="section-break"></div>
+      <section class="project-section" id="project-section">
+        <h2 class="projects-text">My projects</h2>
+        <div class="projects">
+          <div class="project">
+            <div class="card food-app">
+              <h2 class="card-title">FoodApp</h2>
+              <div class="shadow"></div>
+              <div class="description">
+                <p>A demo food ordering app created using React and Redux</p>
+                <div class="links">
+                  <a
+                    href="https://github.com/barciik/food-app/tree/main"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                  <a
+                    href="https://barciik.github.io/food-app/#/"
+                    target="_blank"
+                    >Deployment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="card todo-list">
+              <h2 class="card-title">ToDoList</h2>
+              <div class="shadow"></div>
+              <div class="description">
+                <p>A ToDo List connected to firebase database.</p>
+                <div class="links">
+                  <a href="https://github.com/barciik/todo-list" target="_blank"
+                    >Source Code</a
+                  >
+                  <a href="https://barciik.github.io/todo-list/" target="_blank"
+                    >Deployment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="contact-section" id="contact-section">
+      <div class="contact-shadow" id="contact-shadow"></div>
+      <div class="contact-container" id="contact-container">
+        <h2 class="contact-header">How to reach me</h2>
+        <div class="contact-item">
+          <p>E-mail:</p>
+          <p class="contact-highlighted">bartek.batko3@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <p>Linkedin:</p>
+          <a
+            class="contact-highlighted"
+            target="_blank"
+            href="https://www.linkedin.com/in/bart%C5%82omiej-batko-518bb0226/"
+            >Link</a
+          >
+        </div>
+        <div class="contact-item">
+          <p>Github:</p>
+          <a
+            class="contact-highlighted"
+            target="_blank"
+            href="https://github.com/barciik"
+            >Link</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
